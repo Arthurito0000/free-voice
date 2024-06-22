@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', function () {
       768: {
         perPage: 3,
       },
+      1024: {
+        perPage: 4,
+      },
     },
   }).mount();
 

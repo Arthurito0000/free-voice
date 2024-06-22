@@ -75,7 +75,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
         <section class="h-auto pb-10 pt-5 px-3">
             <h1  class="text-2xl text-center font-bold lg:text-4xl pt-8 pb-8">Comment Pouvons Nous vous aider ?</h1>
-            <div class="max-md:grid lg:hidden max-md:grid-cols-1 max-md:grid-rows-3 md:grid md:gap-5 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-1 md:grid-rows-[auto]  max-md:gap-8">
+            <div class="max-md:grid   lg:hidden max-md:grid-cols-1 max-md:grid-rows-3 md:grid md:gap-5 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-1 lg:mr-[-130px] md:grid-rows-[auto]  max-md:gap-8">
                 <div class="h-[510px] rounded-xl md:col-span-1 bg-[--secondary-color] hover:shadow-2xl transition-all duration-300 ease-in-out">
                     <img src="../assets/images/OIP (2).jpeg" alt="" class="h-[50%] object-cover rounded-t-xl" >
                     <h2 class="text-3xl text-white font-bold pl-3 pt-5">I Need help Now !!</h2>
@@ -126,12 +126,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         <section class=" h-auto pb-10 px-3" aria-labelledby="carousel-heading">
             <h1 id="carousel-heading"  class="text-2xl text-center font-bold  pt-8 pb-8 text-black">Temoignages</h2>
           
-                <div id="div-slider" class="splide">
+                <div id="div-slider" class="splide lg:w-[800px] lg:mx-auto">
                     <div class="splide__track">
                         <ul class="splide__list ">
                             <li class="splide__slide ">
                                 <div class="slide-content h-[450px] rounded-xl bg-[--secondary-color]">
-                                 <div class="flex gap-2 md:justify-center md:flex-col">
+                                 <div class="flex gap-2 md:justify-center lg:mx-auto lg:place-items-center md:flex-col">
                                     <div class="pl-8 pt-10 rounded-full"><img src="../assets/images/shutterstock_327361349-1.jpg" alt="" class="w-24 object-cover rounded-full h-24"></div>
                                     <div>
                                        <p class="font-bold pt-10 text-xl text-white">Tatiana Jones</p>
@@ -201,13 +201,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
         </section>
 
-        <section class="h-auto pb-10 bg-[--secondary-color] px-3 md:pl-5 md:place-items-center md:place-content-center md:grid md:grid-cols-2 md:grid-rows-1">
-      <div class="md:w-[80%]">
-        <h1 class="text-3xl font-bold text-white max-md:text-center pt-10 ">Rejoignez-Nous</h1>
+        <section class="h-auto lg:h-[500px] pb-10 bg-[--secondary-color] px-3 md:pl-5 md:place-items-center md:place-content-center md:grid md:grid-cols-2 md:grid-rows-1">
+      <div class="md:w-[80%] lg:w-5[70%]">
+        <h1 class="text-3xl font-bold text-white max-md:text-center lg:text-4xl pt-10 ">Rejoignez-Nous</h1>
         <p class="text-white pt-8 pb-8">"Notre communauté est puissante et grandissante. Ensemble, nous pouvons construire un monde où la violence domestique n'est plus tolérée. Inscrivez-vous pour recevoir des mises à jour par e-mail sur notre travail et comment vous pouvez soutenir les femmes et les enfants en faisant des dons, en collectant des fonds, en faisant campagne et en faisant du bénévolat. Vous pouvez vous désinscrire à tout moment."</p>
-      </div class="md:w-full">
+      </div class="md:w-full lg:w-[20%]">
             <form action="#" method="post">
-                <div class="md:flex md:gap-4"> 
+                <div class="md:flex md:gap-4 "> 
                     <label for="nmae" class="flex flex-col gap-1 mb-8 text-white">
                         Nom
                         <input type="text" class="py-2 rounded-md outline-none" id="name" name="name">
@@ -221,27 +221,32 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     Email
                     <input type="email" class="py-2 rounded-md outline-none" id="email" name="email">
                 </label>
-                <button type="submit" class=" btn_outline md:text-xs md:px-3 md:py-2 md:w-fit md:mx-auto md:flex md:justify-center max-md:w-full text-center bg-[--primary-color] text-white hover:bg-[#993A34] transition-all duration-300 ease-in-out">S'inscrire</button>
+                <p class="text-white mb-8">Please see our <a href="#" class="underline text-white">privacy policy</a> for details of how we will use your information and keep it safe and secure.</p>
+                <button type="submit" class="lg:px-4 lg:text-xl lg:py-3 btn_outline md:text-xs md:px-3 md:py-2 max-lg:w-fit max-lg::mx-auto md:flex md:justify-center max-md:w-full text-center bg-[--primary-color] text-white hover:bg-[#993A34] transition-all duration-300 ease-in-out">S'inscrire</button>
             </form>
         </section>
 
         <section class="h-auto  pt-8 pb-10">
-          <div>
-            <div></div>
-            <div>
-                <h1  class="text-2xl text-center font-bold  pt-5 pb-4 text-black">Faites Un Don</h1>
-                <h2 class="text-xl font-semibold text-center pb-5">Soutenez Notre Plateforme   </h2>
-                <img src="../assets/images/coverfbdongrrif-1680x730.png" alt="" class="md:">
+          <div class="lg:grid lg:grid-cols-2 lg:grid-rows-1">
+            
+            <div class="lg:w-[80%] lg:mx-auto">
+                <h1  class="text-2xl max-lg:text-center font-bold lg:px-3  pt-5 pb-4 text-black lg:text-4xl">Faites Un Don</h1>
+                <h2 class="text-xl font-semibold max-lg:text-center lg:px-3 pb-5">Soutenez Notre Plateforme   </h2>
+                <img src="../assets/images/coverfbdongrrif-1680x730.png" alt="" class="lg:hidden">
                 <p class="pt-5 px-3 pb-8">Votre soutien est essentiel pour aider notre plateforme à continuer à offrir des ressources et un soutien vital aux victimes de violences conjugales. En faisant un don, vous contribuez directement à créer un environnement sûr et solidaire pour les femmes et les enfants en détresse. Chaque don compte et aide à financer des services cruciaux, comme le chat en direct avec des conseillers, les ressources éducatives, et le programme de parrainage.
 
                     Ensemble, nous pouvons faire une différence. Merci de votre générosité.</p>
-                 <div class="flex justify-center">   <a href="#" class=" btn_outline text-center bg-[--primary-color] text-white hover:bg-[#993A34] transition-all duration-300 ease-in-out">Demander de l'assistance</a></div>
+                 <div class="max-lg:flex justify-center">   <a href="#" class=" btn_outline text-center bg-[--primary-color] text-white hover:bg-[#993A34] transition-all duration-300 ease-in-out">Demander de l'assistance</a></div>
+            </div>
+
+            <div>
+                <img src="../assets/images/coverfbdongrrif-1680x730.png" alt="" class="max-lg:hidden w-[85%] mx-auto h-[400px] object-cover">
             </div>
           </div>
         </section>
     </main>
     <footer class=" bg-violet-950 pl-5 mt-5 text-white py-10 ">
-      <div class="grid grid-cols-2 grid-rows-2 gap-8 ">
+      <div class="grid grid-cols-2 lg:grid-cols-4 lg:grid-rows-1 lg:justify-center lg:mx-auto lg:ml-10 grid-rows-2 gap-8 ">
         <div class="">
             <h1 class="font-bold pb-5 text-2xl">About us</h1>
             <ul class="">
