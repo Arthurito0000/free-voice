@@ -5,26 +5,314 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/output.css">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
+    <script src="../assets/js/slide.js" defer></script>
     <title>FreeVoice_Accueil</title>
 </head>
 <body>
     <header>
-        <div id="mobile header">
-            <div><img src="../assets/images/" alt=""></div>
-            <div></div>
+        <div id="mobile_header" class="fixed md:hidden z-50 w-full border-none">
+          <div class="h-[100px] bg-[--secondary-color] flex justify-between "> 
+           <div><img src="../assets/images/nn-removebg-preview (1).png" alt="" class="h-[200px] w-full mt-[-50px] ml-[-15px]"></div>
+           <div><ion-icon id="menu-icon" name="menu-outline" class="text-white text-5xl md:hidden mt-7 mr-3"></ion-icon></div>
+          </div>
         </div>
-    </header>
-    <main>
-        <section id="landing" class="h-screen bg-[--secondary-color]">
-            <div>
-                <img src="../assets/images/" alt="">
+
+        <div id="tablet_header" class="max-md:hidden">
+            <div class="h-[100px] bg-[--secondary-color] flex justify-between place-items-center "> 
+                <div><img src="../assets/images/nn-removebg-preview (1).png" alt="" class="h-[200px] w-full  ml-[-15px]"></div>
+                <div class="ml-[-20px]">
+                    <ul class="flex gap-3 md:gap-8  mt-2 text-white justify-between place-items-center ">
+                        <li><a href="http://" class="text-orange-600 lg:text-2xl">Accueil</a></li>
+                        <li><a href="http://" class="hover:text-orange-600 duration-300 transition-all ease-in-out lg:text-xl">Education</a></li>
+                        <li><a href="http://" class="hover:text-orange-600 duration-300 transition-all ease-in-out lg:text-xl">Temoignage</a></li>
+                        <li><a href="http://" class="hover:text-orange-600 duration-300 transition-all ease-in-out lg:text-xl">Aide</a></li>
+                        <li><a href="http://" class="hover:text-orange-600 duration-300 transition-all ease-in-out lg:text-xl">Blog</a></li>
+                        <li><a href="http://" class="hover:text-orange-600 duration-300 transition-all ease-in-out lg:text-xl">Parrainage</a></li>
+                        <li><a href="http://" class="hover:text-orange-600 duration-300 transition-all ease-in-out lg:text-xl">Contactez-nous</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="#" class="text-2xl pr-5 text-orange-600">Sign up</a>
+                    <a href="#" class="text-2xl pr-5 text-white">Login</a>
+                </div>
             </div>
-            <div class="text-white">
-                <h1 class="text-3xl font-bold">Brisez le Silence, Embrassez l'Espoir</h1>
-                <p class="italic">Chaque jour, des milliers de personnes souffrent en silence, piégées dans le cycle de la violence domestique. Derrière les portes closes, la peur et la douleur deviennent des compagnons constants, érodant l'esprit et isolant le cœur. Mais il y a de l'espoir. Ici, nous croyons en la puissance du soutien, de la compréhension et de l'action.</p>
+        </div>
+
+    </header>
+    <main class="max-md:pt-[100px]">
+        <section id="landing" class="h-auto lg:h-[600px] max-md:pb-10 bg-[--secondary-color] max-md:pt-5 px-2 ">
+           <div class="md:grid md:grid-cols-2 md:grid-rows-1 gap-32 place-content-center place-items-center justify-between">
+            <div class="text-white lg:pl-14 flex flex-col gap-5">
+                <h1 class="text-2xl max-md:text-center font-bold  lg:text-5xl">Brisez le Silence, Embrassez l'Espoir</h1>
+                <img src="../assets/images/6d0601c696ecf464766ca63c2c34526f.png" alt="" class="h-[400px] lg:h-[100px] md:hidden w-full object-cover">
+                <p class="italic md:text-xs lg:text-xl">Chaque jour, des milliers de personnes souffrent en silence, piégées dans le cycle de la violence domestique. Derrière les portes closes, la peur et la douleur deviennent des compagnons constants, érodant l'esprit et isolant le cœur. Mais il y a de l'espoir. Ici, nous croyons en la puissance du soutien, de la compréhension et de l'action.</p>
+                <div class="mt-5 flex max-md:flex-col gap-8">
+                    <a href="#" class="btn_outline lg:px-4 lg:text-xl lg:py-3 md:text-xs md:px-3 md:py-2 hover:bg-[--primary-color] hover:text-white transition-all duration-300 ease-in-out text-[--primary-color] text-center">Demandez de l'aide</a>
+                    <a href="#" class=" btn_outline lg:px-4 lg:text-xl lg:py-3  md:text-xs md:px-3 md:py-2 text-center bg-[--primary-color] text-white hover:bg-[#993A34] transition-all duration-300 ease-in-out">Demander de l'assistance</a>
+                </div>
+            </div>
+            <div>
+                <img src="../assets/images/6d0601c696ecf464766ca63c2c34526f.png" alt="" class="h-[400px] lg:h-[600px] md:h-full rounded-md w-[100%] max-md:hidden">
+            </div>
+           </div>
+        </section>
+
+        <section class="h-auto pb-10 bg-white pt-5 px-3 ">
+           <div class="md:grid md:grid-cols-2 md:grid-rows-1 md:pt-20">
+            <div class="max-md:hidden">
+                <img src="../assets/images/green.jpg" alt="" class="rounded-xl w-[80%] lg:object-cover  lg:h-[600px] ml-8">
+            </div>
+            <div>
+                <h1  class="text-2xl max-md:text-center font-bold  lg:text-4xl lg:pb-10 pt-8">Ensemble, nous pouvons créer un monde sans violence domestique.</h1>
+                <p class="font-light pt-3 mb-5 md:mb-10 lg:pb-5">Il est essentiel de s'éduquer sur la violence conjugale pour mieux comprendre ses multiples facettes et ses conséquences dévastatrices. La violence conjugale ne se limite pas aux abus physiques; elle inclut aussi les violences psychologiques, sexuelles et économiques. En étant informé, vous pouvez mieux reconnaître les signes de la violence, apporter un soutien approprié et contribuer à créer une société plus sûre et respectueuse. Prenez le temps de vous informer, de lire des témoignages et de comprendre les dynamiques de pouvoir et de contrôle qui sous-tendent la violence domestique. Votre connaissance peut sauver des vies et aider à briser le cycle de la violence.</p>
+                <a href="#" class="btn_outline bg-[#290681] hover:bg-[--secondary-color] md:text-xs lg:px-4 lg:text-xl lg:py-3 md:px-3 md:py-2 max-md:flex justify-center  border-none text-white">Decourir plus sur le sujet</a>
+            </div>
+           </div>
+        </section>
+
+        <section class="h-auto pb-10 pt-5 px-3">
+            <h1  class="text-2xl text-center font-bold lg:text-4xl pt-8 pb-8">Comment Pouvons Nous vous aider ?</h1>
+            <div class="max-md:grid lg:hidden max-md:grid-cols-1 max-md:grid-rows-3 md:grid md:gap-5 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-1 md:grid-rows-[auto]  max-md:gap-8">
+                <div class="h-[510px] rounded-xl md:col-span-1 bg-[--secondary-color] hover:shadow-2xl transition-all duration-300 ease-in-out">
+                    <img src="../assets/images/OIP (2).jpeg" alt="" class="h-[50%] object-cover rounded-t-xl" >
+                    <h2 class="text-3xl text-white font-bold pl-3 pt-5">I Need help Now !!</h2>
+                    <p class="text-gray-400 pl-3 pb-5">You are not alone</p>
+                    <p class="text-gray-400 pl-3 pb-10">If you or someone you know is experiencing domestic abuse of any kind, Refuge is here to support you — and we’re glad you’ve found us.</p>
+                    <a href="#" class="text-[--primary-color] ml-3 border-b border-[--primary-color] hover:text-[#993A34] border-[#993A34] transition-all duration-300 ease-in-out">Learn more</a>
+                </div>
+
+                <div class="h-[510px] rounded-xl md:col-span-1 bg-[--secondary-color] hover:shadow-2xl transition-all duration-300 ease-in-out"  >
+                    <img src="../assets/images/hands.jpg" alt="" class="h-[50%] w-full object-cover rounded-t-xl">
+                    <h2 class="text-3xl text-white font-bold pl-3 pt-5 pb-8">Support Someone who is abused</h2>
+                    <p class="text-gray-400 pl-3 pb-10">If you’re worried about someone you care about, learn more about how you can support them.</p>
+                    <a href="#" class="text-[--primary-color] ml-3 border-b border-[--primary-color] hover:text-[#993A34] border-[#993A34] transition-all duration-300 ease-in-out">Learn more</a>
+                </div>
+                
+                <div class="h-[510px] rounded-xl bg-[--secondary-color] md:col-span-2 justify-self-center w-[50%] mt-10 hover:shadow-2xl transition-all duration-300 ease-in-out"  >
+                    <img src="../assets/images/OIP (8).jpeg" alt="" class="h-[50%] w-full object-cover rounded-t-xl">
+                    <h2 class="text-3xl text-white font-bold pl-3 pt-5 pb-5">What is domestical violence</h2>
+                    <p class="text-gray-400 pl-3 pb-8">Domestic abuse (sometimes called ‘domestic violence’ or ‘intimate partner violence’) is an incident or a pattern of...	</p>
+                    <a href="#" class="text-[--primary-color] ml-3 border-b border-[--primary-color] hover:text-[#993A34] border-[#993A34] transition-all duration-300 ease-in-out">Learn more</a>
+                </div>
+            </div>
+            <div class="max-md:grid max-lg:hidden max-md:grid-cols-1 max-md:grid-rows-3  lg:grid lg:grid-cols-3 lg:grid-rows-1 max-md:gap-8">
+                <div class="h-[510px] rounded-xl bg-[--secondary-color] lg:w-[80%] hover:shadow-2xl transition-all duration-300 ease-in-out">
+                    <img src="../assets/images/OIP (2).jpeg" alt="" class="h-[50%] w-full object-cover rounded-t-xl" >
+                    <h2 class="text-3xl text-white font-bold pl-3 pt-5">I Need help Now !!</h2>
+                    <p class="text-gray-400 pl-3 pb-5">You are not alone</p>
+                    <p class="text-gray-400 pl-3 pb-10">If you or someone you know is experiencing domestic abuse of any kind, Refuge is here to support you — and we’re glad you’ve found us.</p>
+                    <a href="#" class="text-[--primary-color] ml-3 border-b border-[--primary-color] hover:text-[#993A34] border-[#993A34] transition-all duration-300 ease-in-out">Learn more</a>
+                </div>
+
+                <div class="h-[510px] rounded-xl  bg-[--secondary-color] hover:shadow-2xl lg:w-[80%] transition-all duration-300 ease-in-out"  >
+                    <img src="../assets/images/hands.jpg" alt="" class="h-[50%] w-full object-cover rounded-t-xl">
+                    <h2 class="text-3xl text-white font-bold pl-3 pt-5 pb-8">Support Someone who is abused</h2>
+                    <p class="text-gray-400 pl-3 pb-10">If you’re worried about someone you care about, learn more about how you can support them.</p>
+                    <a href="#" class="text-[--primary-color] ml-3 border-b border-[--primary-color] hover:text-[#993A34] border-[#993A34] transition-all duration-300 ease-in-out">Learn more</a>
+                </div>
+                
+                <div class="h-[510px] lg:mt-[-3px] rounded-xl bg-[--secondary-color]  justify-self-center w-[50%] lg:w-[80%] mt-10 hover:shadow-2xl transition-all duration-300 ease-in-out"  >
+                    <img src="../assets/images/OIP (8).jpeg" alt="" class="h-[50%] lg: w-full object-cover rounded-t-xl">
+                    <h2 class="text-3xl text-white font-bold pl-3 pt-5 pb-5">What is domestical violence</h2>
+                    <p class="text-gray-400 pl-3 pb-8">Domestic abuse (sometimes called ‘domestic violence’ or ‘intimate partner violence’) is an incident or a pattern of...	</p>
+                    <a href="#" class="text-[--primary-color] ml-3 border-b border-[--primary-color] hover:text-[#993A34] border-[#993A34] transition-all duration-300 ease-in-out">Learn more</a>
+                </div>
             </div>
         </section>
+
+        <section class=" h-auto pb-10 px-3" aria-labelledby="carousel-heading">
+            <h1 id="carousel-heading"  class="text-2xl text-center font-bold  pt-8 pb-8 text-black">Temoignages</h2>
+          
+                <div id="div-slider" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list ">
+                            <li class="splide__slide ">
+                                <div class="slide-content h-[450px] rounded-xl bg-[--secondary-color]">
+                                 <div class="flex gap-2 md:justify-center md:flex-col">
+                                    <div class="pl-8 pt-10 rounded-full"><img src="../assets/images/shutterstock_327361349-1.jpg" alt="" class="w-24 object-cover rounded-full h-24"></div>
+                                    <div>
+                                       <p class="font-bold pt-10 text-xl text-white">Tatiana Jones</p>
+                                       <p class="text-gray-400">34 ans</p>
+                                    </div>
+                                 </div>
+                                 <div>
+                                    <p class="italic px-5 text-white pt-8 ">
+                                        "J'ai vécu pendant des années dans la peur et le silence, croyant que je n'avais pas d'issue. Grâce à cette plateforme, j'ai trouvé le courage de parler et de demander de l'aide. Les conseillers ont été d'un soutien incroyable, et aujourd'hui, je suis sur le chemin de la guérison. Je ne suis plus seule, et j'ai retrouvé l'espoir."
+                                    </p>
+                                    
+                                 </div>
+                                 <div class="flex justify-end pr-10 pt-10">
+                                    <p class="text-white pt-3">10</p>
+                                    <ion-icon name="chatbubble" class="text-[--primary-color] text-3xl"></ion-icon>
+                                 </div>
+                                </div>
+                            </li>
+    
+                            <div class="slide-content h-[450px] rounded-xl bg-[--secondary-color]">
+                                <div class="flex gap-2">
+                                   <div class="pl-8 pt-10 rounded-full"><img src="../assets/images/business-funding.jpg" alt="" class="w-24 object-cover rounded-full h-24"></div>
+                                   <div>
+                                      <p class="font-bold pt-10 text-xl text-white">Tatiana Jones</p>
+                                      <p class="text-gray-400">34 ans</p>
+                                   </div>
+                                </div>
+                                <div>
+                                   <p class="italic px-5 text-white pt-8 ">
+                                       "J'ai vécu pendant des années dans la peur et le silence, croyant que je n'avais pas d'issue. Grâce à cette plateforme, j'ai trouvé le courage de parler et de demander de l'aide. Les conseillers ont été d'un soutien incroyable, et aujourd'hui, je suis sur le chemin de la guérison. Je ne suis plus seule, et j'ai retrouvé l'espoir."
+                                   </p>
+                                   
+                                </div>
+                                <div class="flex justify-end pr-10 pt-10">
+                                   <p class="text-white pt-3">10</p>
+                                   <ion-icon name="chatbubble" class="text-[--primary-color] text-3xl"></ion-icon>
+                                </div>
+                               </div>
+    
+                               <div class="slide-content h-[450px] rounded-xl bg-[--secondary-color]">
+                                <div class="flex gap-2">
+                                   <div class="pl-8 pt-10 rounded-full"><img src="../assets/images/shutterstock_327361349-1.jpg" alt="" class="w-24 object-cover rounded-full h-24"></div>
+                                   <div>
+                                      <p class="font-bold pt-10 text-xl text-white">Tatiana Jones</p>
+                                      <p class="text-gray-400">34 ans</p>
+                                   </div>
+                                </div>
+                                <div>
+                                   <p class="italic px-5 text-white pt-8 ">
+                                       "J'ai vécu pendant des années dans la peur et le silence, croyant que je n'avais pas d'issue. Grâce à cette plateforme, j'ai trouvé le courage de parler et de demander de l'aide. Les conseillers ont été d'un soutien incroyable, et aujourd'hui, je suis sur le chemin de la guérison. Je ne suis plus seule, et j'ai retrouvé l'espoir."
+                                   </p>
+                                   
+                                </div>
+                                <div class="flex justify-end pr-10 pt-10">
+                                   <p class="text-white pt-3">10</p>
+                                   <ion-icon name="chatbubble" class="text-[--primary-color] text-3xl"></ion-icon>
+                                </div>
+                               </div>
+                            <!-- Add more slides as needed -->
+                        </ul>
+                    </div>
+                    <div class="splide__pagination mb-14"></div> <!-- Pagination container -->
+                </div>
+
+                <div class="flex justify-center">
+                    <a href="#" class="text-[--primary-color] text-center text-xl mt-5 border-b border-[--primary-color] font-semibold  flex justify-center w-fit ">Voir Plus</a>
+                </div>
+        </section>
+
+        <section class="h-auto pb-10 bg-[--secondary-color] px-3 md:pl-5 md:place-items-center md:place-content-center md:grid md:grid-cols-2 md:grid-rows-1">
+      <div class="md:w-[80%]">
+        <h1 class="text-3xl font-bold text-white max-md:text-center pt-10 ">Rejoignez-Nous</h1>
+        <p class="text-white pt-8 pb-8">"Notre communauté est puissante et grandissante. Ensemble, nous pouvons construire un monde où la violence domestique n'est plus tolérée. Inscrivez-vous pour recevoir des mises à jour par e-mail sur notre travail et comment vous pouvez soutenir les femmes et les enfants en faisant des dons, en collectant des fonds, en faisant campagne et en faisant du bénévolat. Vous pouvez vous désinscrire à tout moment."</p>
+      </div class="md:w-full">
+            <form action="#" method="post">
+                <div class="md:flex md:gap-4"> 
+                    <label for="nmae" class="flex flex-col gap-1 mb-8 text-white">
+                        Nom
+                        <input type="text" class="py-2 rounded-md outline-none" id="name" name="name">
+                    </label>
+                    <label for="nmae" class="flex flex-col gap-1 mb-8 text-white">
+                        Prenom
+                        <input type="text" class="py-2 rounded-md outline-none" id="prenom" name="prenom">
+                    </label>
+                </div>
+                <label for="nmae" class="flex flex-col gap-1 mb-8 text-white">
+                    Email
+                    <input type="email" class="py-2 rounded-md outline-none" id="email" name="email">
+                </label>
+                <button type="submit" class=" btn_outline md:text-xs md:px-3 md:py-2 md:w-fit md:mx-auto md:flex md:justify-center max-md:w-full text-center bg-[--primary-color] text-white hover:bg-[#993A34] transition-all duration-300 ease-in-out">S'inscrire</button>
+            </form>
+        </section>
+
+        <section class="h-auto  pt-8 pb-10">
+          <div>
+            <div></div>
+            <div>
+                <h1  class="text-2xl text-center font-bold  pt-5 pb-4 text-black">Faites Un Don</h1>
+                <h2 class="text-xl font-semibold text-center pb-5">Soutenez Notre Plateforme   </h2>
+                <img src="../assets/images/coverfbdongrrif-1680x730.png" alt="" class="md:">
+                <p class="pt-5 px-3 pb-8">Votre soutien est essentiel pour aider notre plateforme à continuer à offrir des ressources et un soutien vital aux victimes de violences conjugales. En faisant un don, vous contribuez directement à créer un environnement sûr et solidaire pour les femmes et les enfants en détresse. Chaque don compte et aide à financer des services cruciaux, comme le chat en direct avec des conseillers, les ressources éducatives, et le programme de parrainage.
+
+                    Ensemble, nous pouvons faire une différence. Merci de votre générosité.</p>
+                 <div class="flex justify-center">   <a href="#" class=" btn_outline text-center bg-[--primary-color] text-white hover:bg-[#993A34] transition-all duration-300 ease-in-out">Demander de l'assistance</a></div>
+            </div>
+          </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer class=" bg-violet-950 pl-5 mt-5 text-white py-10 ">
+      <div class="grid grid-cols-2 grid-rows-2 gap-8 ">
+        <div class="">
+            <h1 class="font-bold pb-5 text-2xl">About us</h1>
+            <ul class="">
+              <li class="hover:text-yellow-400 pb-2"><a href="">What we believe</a></li>
+              <li class="hover:text-yellow-400 pb-2"><a href="">Our Impact</a></li>
+              <li class="hover:text-yellow-400 pb-2"><a href="">Finances</a></li>
+              <li class="hover:text-yellow-400 pb-2"><a href="">FAQs</a></li>
+              <li class="hover:text-yellow-400 pb-2"><a href="">Contact us</a></li>
+              <li class="hover:text-yellow-400 pb-2"><a href="">Media</a></li>
+            </ul>
+          </div>
+    
+          <div>
+            <h1 class="font-bold pb-3 text-2xl">I need help</h1>
+            <ul>
+              <li class="hover:text-yellow-400 pb-2"><a href="">What is domestic <br /> abuse?</a></li>
+              <li class="hover:text-yellow-400 pb-2"><a href="">Women's Aid Live <br /> chat</a></li>
+              <li class="hover:text-yellow-400 pb-2"><a href="">The Survivor's <br /> Handbook</a></li>
+              <li class="hover:text-yellow-400 pb-2"><a href="">Survivors' Forum</a></li>
+              <li class="hover:text-yellow-400 pb-2"><a href="">Support by Email</a></li>
+              <li class="hover:text-yellow-400 pb-2"><a href="">Find your local <br /> service</a></li>
+              <li class="hover:text-yellow-400 pb-2"><a href="">I'm 14+</a></li>
+              <li class="hover:text-yellow-400 pb-2"><a href="">I'm under 14</a></li>
+              <li class="hover:text-yellow-400 pb-2"><a href="">I work with survivors</a></li>
+            </ul>
+          </div>
+    
+          <div class="">
+            <h1 class="font-bold pb-3 text-2xl">Get involved</h1>
+            <ul>
+              <li class="hover:text-yellow-400 pb-2"><a href="">Give</a></li>
+              <li class="hover:text-yellow-400 pb-2"><a href="">Fundraise</a></li>
+              <li class="hover:text-yellow-400 pb-2"><a href="">Campaign</a></li>
+              <li class="hover:text-yellow-400 pb-2"><a href="">Raise awareness</a></li>
+              <li class="hover:text-yellow-400 pb-2"><a href="">Events</a></li>
+              <li class="hover:text-yellow-400 pb-2"><a href="">Become a Member <br /> Service</a></li>
+              <li class="hover:text-yellow-400 pb-2"><a href="">Find a feminist <br /> freelancer</a></li>
+            </ul>
+          </div>
+    
+          <div>
+            <h1 class="font-bold pb-3 text-2xl">What we do</h1>
+            <ul>
+              <li class="hover:text-yellow-400 pb-2"><a href="">Supporting survivors</a></li>
+              <li class="hover:text-yellow-400 pb-2"><a href="">Supporting the <br /> sector</a></li>
+              <li class="hover:text-yellow-400 pb-2"><a href="">Campaigning and <br /> influencing</a></li>
+              <li class="hover:text-yellow-400 pb-2"><a href="">Training and <br /> qualifications</a></li>
+              <li><a class="hover:text-yellow-400" href="">Members' Area <br /> Home</a></li>
+            </ul>
+          </div>
+  
+      </div>
+
+      <div>
+        <p>Join our family</p>
+        <div>
+           <a href="#"> <ion-icon name="logo-facebook" class="text-blue-500 text-2xl"></ion-icon></a>
+           <a href="#"><ion-icon name="logo-youtube" class="text-red-600 text-2xl"></ion-icon></a>
+           <a href="#"><ion-icon name="logo-instagram"  class="text-black text-2xl"></ion-icon></ion-icon></a>
+           <ion-icon name="logo-twitter" class="px-2 py-2 rounded-full bg-blue-500 text-white"></ion-icon>
+
+        </div>
+      </div>
+
+      </footer>
+  
+
+    <script type="module" src="https://unpkg.com/ioni                                                                                                                                                                                                           ons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
 </body>
 </html>
