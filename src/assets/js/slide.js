@@ -5,14 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     snap: true,
     pagination: false, // Enable pagination
     arrows: true, // Disable default arrows
-    breakpoints: {
-      768: {
-        perPage: 3,
-      },
-      1024: {
-        perPage: 4,
-      },
-    },
+    
   }).mount();
 
 });

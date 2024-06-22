@@ -9,6 +9,7 @@
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 " rel="stylesheet">
     <script src="../assets/js/slide.js" defer></script>
+    <script src="../assets/js/ham.js" defer></script>
     <title>FreeVoice_Accueil</title>
 </head>
 <body>
@@ -16,7 +17,39 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         <div id="mobile_header" class="fixed md:hidden z-50 w-full border-none">
           <div class="h-[100px] bg-[--secondary-color] flex justify-between "> 
            <div><img src="../assets/images/nn-removebg-preview (1).png" alt="" class="h-[200px] w-full mt-[-50px] ml-[-15px]"></div>
-           <div><ion-icon id="menu-icon" name="menu-outline" class="text-white text-5xl md:hidden mt-7 mr-3"></ion-icon></div>
+           <div>
+            <ion-icon name="menu-outline" id="open" onclick="openHamburger()"
+                class="text-5xl mt-5 mr-4  text-white"></ion-icon>
+            <ion-icon name="close-outline" id="close" onclick="closemenu()"
+                class="text-5xl mt-5 mr-4  text-white absolute right-0 hidden"></ion-icon>
+           </div>
+        </div>
+        <div id="hamburger"
+        class="bg-white h-screen w-full px-3  transform transition-all duration-300 ease-in-out z-10 delay-100  top-20 absolute hidden">
+        <div class="mt-1 flex flex-col mb-10">
+            <div onclick="submenu1_open()" class="flex justify-between border-gray-200 border-y-2  py-5">
+                <p class="text-2xl">Education</p>
+                <ion-icon name="chevron-forward-outline" class="text-2xl"></ion-icon>
+            </div>
+            <div onclick="submenu2_open()" class="flex justify-between border-gray-200 border-b-2  py-5">
+                <p class="text-2xl">Temoignages</p>
+                <ion-icon name="chevron-forward-outline" class="text-2xl"></ion-icon>
+            </div>
+            <div onclick="submenu3_open()" class="flex justify-between border-gray-200 border-b-2  py-5">
+                <p class="text-2xl">Aide</p>
+                <ion-icon name="chevron-forward-outline" class="text-2xl"></ion-icon>
+            </div>
+            <div class="flex justify-between border-gray-200 border-b-2  py-5">
+                <a href="#" class="text-2xl">arrainage</a>
+            </div>
+            <div onclick="submenu4_open()" class="flex justify-between border-gray-200 border-b-2  py-5">
+                <p class="text-2xl">Signaler</p>
+                <ion-icon name="chevron-forward-outline" class="text-2xl"></ion-icon>
+            </div>
+        </div>
+        
+        <a href="#" class="py-4 px-20 border-2 border-[--primary-color] mt-10 block text-center">Connexion</a>
+    </div>
           </div>
         </div>
 
@@ -75,7 +108,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
         <section class="h-auto pb-10 pt-5 px-3">
             <h1  class="text-2xl text-center font-bold lg:text-4xl pt-8 pb-8">Comment Pouvons Nous vous aider ?</h1>
-            <div class="max-md:grid   lg:hidden max-md:grid-cols-1 max-md:grid-rows-3 md:grid md:gap-5 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-1 lg:mr-[-130px] md:grid-rows-[auto]  max-md:gap-8">
+            <div class="max-md:grid   lg:hidden max-md:grid-cols-1 max-md:grid-rows-3 md:grid md:gap-5 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-1 lg:mr-[-] md:grid-rows-[auto]  max-md:gap-8">
                 <div class="h-[510px] rounded-xl md:col-span-1 bg-[--secondary-color] hover:shadow-2xl transition-all duration-300 ease-in-out">
                     <img src="../assets/images/OIP (2).jpeg" alt="" class="h-[50%] object-cover rounded-t-xl" >
                     <h2 class="text-3xl text-white font-bold pl-3 pt-5">I Need help Now !!</h2>
@@ -91,14 +124,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     <a href="#" class="text-[--primary-color] ml-3 border-b border-[--primary-color] hover:text-[#993A34] border-[#993A34] transition-all duration-300 ease-in-out">Learn more</a>
                 </div>
                 
-                <div class="h-[510px] rounded-xl bg-[--secondary-color] md:col-span-2 justify-self-center w-[50%] mt-10 hover:shadow-2xl transition-all duration-300 ease-in-out"  >
+                <div class="h-[510px] rounded-xl bg-[--secondary-color] md:col-span-2 justify-self-center mb-10 mt-10 hover:shadow-2xl transition-all duration-300 ease-in-out"  >
                     <img src="../assets/images/OIP (8).jpeg" alt="" class="h-[50%] w-full object-cover rounded-t-xl">
                     <h2 class="text-3xl text-white font-bold pl-3 pt-5 pb-5">What is domestical violence</h2>
                     <p class="text-gray-400 pl-3 pb-8">Domestic abuse (sometimes called ‘domestic violence’ or ‘intimate partner violence’) is an incident or a pattern of...	</p>
                     <a href="#" class="text-[--primary-color] ml-3 border-b border-[--primary-color] hover:text-[#993A34] border-[#993A34] transition-all duration-300 ease-in-out">Learn more</a>
                 </div>
             </div>
-            <div class="max-md:grid max-lg:hidden max-md:grid-cols-1 max-md:grid-rows-3  lg:grid lg:grid-cols-3 lg:grid-rows-1 max-md:gap-8">
+            <!-- <div class="max-md:grid max-lg:hidden max-md:grid-cols-1 max-md:grid-rows-3  lg:grid lg:grid-cols-3 lg:grid-rows-1 max-md:gap-8">
                 <div class="h-[510px] rounded-xl bg-[--secondary-color] lg:w-[80%] hover:shadow-2xl transition-all duration-300 ease-in-out">
                     <img src="../assets/images/OIP (2).jpeg" alt="" class="h-[50%] w-full object-cover rounded-t-xl" >
                     <h2 class="text-3xl text-white font-bold pl-3 pt-5">I Need help Now !!</h2>
@@ -120,13 +153,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     <p class="text-gray-400 pl-3 pb-8">Domestic abuse (sometimes called ‘domestic violence’ or ‘intimate partner violence’) is an incident or a pattern of...	</p>
                     <a href="#" class="text-[--primary-color] ml-3 border-b border-[--primary-color] hover:text-[#993A34] border-[#993A34] transition-all duration-300 ease-in-out">Learn more</a>
                 </div>
-            </div>
+            </div> -->
         </section>
 
         <section class=" h-auto pb-10 px-3" aria-labelledby="carousel-heading">
             <h1 id="carousel-heading"  class="text-2xl text-center font-bold  pt-8 pb-8 text-black">Temoignages</h2>
           
-                <div id="div-slider" class="splide lg:w-[800px] lg:mx-auto">
+                <div id="div-slider" class="splide ">
                     <div class="splide__track">
                         <ul class="splide__list ">
                             <li class="splide__slide ">
@@ -319,5 +352,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 <script src="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 "></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
