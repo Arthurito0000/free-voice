@@ -1,0 +1,447 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:poppins,roboto;
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+:root{
+
+    --primary-color:#ED5950;
+    --secondary-color:#241A3D;
+    --third-color:#FFFFFF;
+}
+
+
+body{
+    background-color: whitesmoke
+}
+
+.logo{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    height: 170px;
+    width: 190px;
+ }
+
+.connexion{
+    width: 100%;
+    height: auto;
+background-color: whitesmoke;
+    padding: 30px 35%;
+ 
+}
+
+
+
+p span{
+    color: #ED5950;
+}
+
+.submit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+
+
+
+
+.form div{
+    margin-bottom: 10px;
+}
+
+.btn-submit{
+    border: none;
+    padding: 0 20%;
+}
+
+.contact-head{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    font-size: clamp(5px,1.5vw,80px);
+}
+
+.contact-head h1{
+    color: var(--secondary-color)
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    color: var(--secondary-color);
+    position:relative;
+
+}
+
+
+
+label::after{
+    content: "*";
+    color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    right: -10px;
+}
+
+
+
+#serviced{
+    margin-bottom: 18px;
+}
+
+#company,#contact,#email,#phone,#serviced{
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    color: var(--secondary-color);
+    border:solid rgba(0,0,0,0.4) 1px;
+    padding-left: 20px;
+}
+
+#company{
+    color:var(--secondary-color);
+}
+
+#phones{
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--bg-color);
+   
+    color: var(--secondary-color);
+    padding-left: 20px;
+}
+
+input{
+    margin-bottom: 8px;
+    color: var(--secondary-color);
+}
+
+textarea{
+    height: 100px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--bg-color);
+    border:solid var(--secondary-color) 1px;
+    color: var(--secondary-color);
+    padding-left: 20px;
+    margin-bottom: 13px;
+}
+
+.btn{
+
+ 
+    border-radius: 5px;
+    text-align: center;
+   
+}
+
+i{
+    font-size: 14px;
+}
+
+.btn1{
+    background-color:var(--primary-color);
+    margin-right: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    color: var(--big-font);
+    border: none;
+    padding: 20px 40px;
+}
+
+form p{
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+}
+
+form a{
+    color: var(--hover-color);
+}
+
+.connexion-contain{
+background-color: whitesmoke;
+    border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.7);
+    opacity: 0.8;
+    height: auto;
+    padding: 3px 5%;
+}
+
+@media screen and (max-width:1280px) {
+
+    .connexion{
+        padding: 5% 18%;
+    }
+
+    #Email::placeholder{
+        font-size: 18px;
+  }
+
+  #password::placeholder{
+    font-size: 18px;
+}
+
+#username::placeholder{
+    font-size: 18px;
+}
+
+#user_type::placeholder{
+    font-size: 18px;
+}
+
+#user_type{
+    font-size: 17px;
+}
+
+
+#Email{
+    height: 70px;
+}
+
+#password{
+    height: 70px;
+}
+
+#username{
+    height: 70px;
+}
+
+#user_type{
+    height: 70px;
+}
+.contact-head h1{
+    color: var(--secondary-color);
+    font-size: 40px;
+}
+
+form p{
+    color: white;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.btn1{
+    font-size: 20px;
+    color: #292e33;
+}
+
+}
+
+@media screen and (max-width:884px) {
+
+    .connexion{
+        padding: 170px 13%;
+       
+    }
+
+    #Email::placeholder{
+        font-size: 18px;
+  }
+
+  #password::placeholder{
+    font-size: 18px;
+}
+
+#username::placeholder{
+    font-size: 18px;
+}
+
+#user_type::placeholder{
+    font-size: 18px;
+}
+
+#Email{
+    height: 70px;
+}
+
+#password{
+    height: 70px;
+}
+
+#username{
+    height: 70px;
+}
+
+#user_type{
+    height: 70px;
+}
+
+.contact-head h1{
+    color: var(--hover-color);
+    font-size: 40px;
+}
+
+form p{
+    color: white;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.btn1{
+    font-size: 15px;
+    color: #292e33;
+}
+
+}
+
+@media screen and (max-width:500px) {
+
+    .connexion{
+        padding: 80px 3%;
+       
+    }
+
+    .logo img{
+        height: 130px;
+        width: 150px;
+     }
+   
+     .contact-head h1{
+        color: var(--hover-color);
+        font-size: 30px;
+    }
+
+    form p{
+        color: white;
+        margin-bottom: 30px;
+        font-size: 18px;
+        text-align: right;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    .connexion{
+        padding: 40px 3%;
+       
+    }
+   
+     .contact-head h1{
+        color: var(--hover-color);
+        font-size: 27px;
+    }
+
+    form p{
+        color: white;
+        margin-bottom: 30px;
+        font-size: 16px;
+        text-align: right;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width:372px) {
+
+    .connexion{
+        padding: 27px 3%;
+    }
+
+    .logo img{
+        height: 130px;
+        width: 150px;
+     }
+   
+     .contact-head h1{
+        color: var(--hover-color);
+        font-size: 24px;
+    }
+
+    form p{
+        color: white;
+        margin-bottom: 30px;
+        font-size: 16px;
+        text-align: right;
+        margin-right: 10px;
+    }
+
+    #Email{
+        height: 50px;
+    }
+    
+    #password{
+        height: 50px;
+    }
+
+    #username{
+        height: 50px;
+    }
+
+    #user_type{
+        height: 50px;
+    }
+
+    .btn1{
+        font-size: 13px;
+        color: #292e33;
+    }
+}
+
+@media screen and (max-width:350px) {
+
+    .connexion{
+        padding: 35px 3%;
+    }
+
+    .logo img{
+        height: 130px;
+        width: 150px;
+     }
+   
+     .contact-head h1{
+        color: var(--hover-color);
+      
+    }
+
+    form p{
+        color: white;
+        margin-bottom: 30px;
+        font-size: 16px;
+        text-align: right;
+        margin-right: 10px;
+    }
+
+    #Email{
+        height: 50px;
+    }
+    
+    #password{
+        height: 50px;
+    }
+
+    #username{
+        height: 50px;
+    }
+
+    #user_type{
+        height: 50px;
+    }
+    
+
+    .btn1{
+        font-size: 13px;
+        color: #292e33;
+    }
+}
