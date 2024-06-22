@@ -554,7 +554,36 @@ video {
   --tw-contain-style:  ;
 }
 
-.text-red-800 {
+.h-screen {
+  height: 100vh;
+}
+
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[--secondary\] {
+  background-color: var(--secondary);
+}
+
+.bg-\[--secondary-color\] {
+  background-color: var(--secondary-color);
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.text-white {
   --tw-text-opacity: 1;
-  color: rgb(153 27 27 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
